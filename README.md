@@ -10,8 +10,6 @@ The controller:
 
 https://www.rocketscream.com/blog/product/tiny-reflow-controller-v2/
 
-https://github.com/rocketscream/TinyReflowController
-
 Unfortunately the controllers were out of stock at the time so I ordered some of the parts
 like the OLED screen and SSRs and wrote firmware for it to suit my needs and
 and to have more functionallity.
