@@ -18,8 +18,12 @@ Eclipse IDE and modified a makefile from a Nordic nRF52 project to build it (to 
 
 This reflow oven design has a single button for accessing/selecting reflow profiles and returning to the main screen.
 
+A few toaster build guides:
+https://www.rocketscream.com/blog/forums/topic/reflow-oven-builds/
+https://www.whizoo.com/reflowoven
+
 (to be continued)
 
 *schematics
+
 *pictures
-*build guides
