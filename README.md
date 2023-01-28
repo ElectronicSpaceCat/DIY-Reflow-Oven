@@ -18,6 +18,7 @@ and to have more functionallity.
 
 Rather than using the Ardunino IDE and the .ino file type, I wrote this entirely in c/c++ using the
 Eclipse IDE and modified a makefile from a Nordic nRF52 project to build it (to be independent of any IDE used).
+Note: The makefile will need to be modified depending on where your source files are located.
 
 This reflow oven design has a single button for accessing/selecting reflow profiles and returning to the main screen.
 
