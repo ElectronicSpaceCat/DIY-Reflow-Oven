@@ -1,5 +1,5 @@
-# This script used to flash the reflow oven firmware on the Arduino Mega 2560 Rev3
-# in the event the CMSIS DAP failed to work (ie the drag-drop firmware interface)
+:: This script used to flash the reflow oven firmware on the Arduino Mega 2560 Rev3
+:: in the event the CMSIS DAP failed to work (ie the drag-drop firmware interface)
 
 ECHO OFF
 
