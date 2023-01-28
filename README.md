@@ -20,6 +20,6 @@ This reflow oven design has a single button for accessing/selecting reflow profi
 
 (to be continued)
 
--schematics
--pictures
--build guides
+*schematics
+*pictures
+*build guides
