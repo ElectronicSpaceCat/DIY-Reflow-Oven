@@ -9,7 +9,7 @@ while looking for a simple solution to building an oven myself.
 The controller:
 https://www.rocketscream.com/blog/product/tiny-reflow-controller-v2/
 
-Unfortunately the controllers were usually out of stock so I ordered some of the parts
+Unfortunately the controllers were out of stock at the time so I ordered some of the parts
 like the OLED screen and SSRs and completely rewrote the firmware to suit my needs and
 and to have more functionallity.
 
