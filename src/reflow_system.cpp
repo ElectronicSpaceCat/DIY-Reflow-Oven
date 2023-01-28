@@ -45,6 +45,7 @@ void init(void){
     digitalWrite(PIN::HEARTBEAT_LED, LOW);
 
     // Enable and setup watchdog so we reset if hang-up occurs
+    // TODO: Had a hang-up and this didn't seem to work, look into this
     watchdogSetup();
     watchdogEnable(2000);
   }
