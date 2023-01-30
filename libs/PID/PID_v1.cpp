@@ -2,8 +2,6 @@
  * Arduino PID Library - Version 1.1.2
  * by Brett Beauregard <br3ttb@gmail.com> brettbeauregard.com
  *
- * Edited by Andrew Green  <electronica95@.gmail.com>- Updated comment for clarity
- *
  * This Library is licensed under a GPLv3 License
  **********************************************************************************************/
 
