@@ -1,0 +1,6 @@
+Download or pull a copy of the libraries required for this project
+which can be found at the top of reflow_main.cpp.
+
+Place them in the /libs folder.
+
+The makefile should point to which files are needed.
