@@ -5,7 +5,7 @@ The toaster oven used in this project was the Black & Decker TO1785SG.
 
 I was inpsired to make this project when I came across the https://www.rocketscream.com/blog/product/tiny-reflow-controller-v2/ controller while looking for a simple solution to building an oven myself.
 
-<img src="https://github.com/ElectronicSpaceCat/ReflowOven/blob/main/resources/images/DSC_0013.JPG" width="250"> <img src="https://github.com/ElectronicSpaceCat/ReflowOven/blob/main/resources/images/DSC_0015.JPG" width="250">
+<img src="https://github.com/ElectronicSpaceCat/ReflowOven/blob/main/resources/images/DSC_0013.JPG" width="250"> <img src="https://github.com/ElectronicSpaceCat/ReflowOven/blob/main/resources/images/DSC_0017.JPG" width="250"> <img src="https://github.com/ElectronicSpaceCat/ReflowOven/blob/main/resources/images/DSC_0015.JPG" width="250">
 
 Unfortunately the controllers were out of stock at the time so I ordered some of the parts like the OLED screen and SSRs to design my own implementation.
 
