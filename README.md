@@ -93,7 +93,7 @@ S:---.--C -  Temperature setpoint for current zone
 * I cannot remember if you need to compile a sample Blinky project or just simply select the board type for the board source files to install..
 * Copy then entire ```/Arduino15``` folder in the root folder of this project after cloning
 * Run the ```*/Makefile```
-* To flash the board, run the ```usb_flash.bat``` and make sure to replace 'COM4' with whatever yours is at the line ```MODE COM4:1200,N,8,1,P```
+* To flash the board, run the ```usb_flash.bat``` and make sure to replace 'COM4' with whatever yours is at the line ```COMM_PORT := COM4```
 * If the binary drag and drop isn't broken like mine was then you may try that option instead  
 
   #### If the above links don't work:
