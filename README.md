@@ -43,13 +43,13 @@ https://www.amazon.com/Hosyond-Display-Self-Luminous-Compatible-Raspberry/dp/B09
 1x each for the bottom element, top element, and fan (optional)  
 https://www.amazon.com/SSR-40AA-80-250V-Output-24-380V-SSR-40/dp/B07FVDL7YX/ref=sr_1_11?keywords=solid%2Bstate%2Brelay&sr=8-11&th=1
 
-* Reflect-A-GOLD
+* Reflect-A-GOLD   
 https://www.designengineering.com/reflect-a-gold-heat-reflective-tape-2-x-15/
 
-* Floor & Tunnel Shield II
+* Floor & Tunnel Shield II   
 https://www.designengineering.com/floor-tunnel-shield-ii-21-x-24/
 
-* Temperature Silicone Sealant
+* Temperature Silicone Sealant   
 https://www.amazon.co.uk/Weld-31314-Temperature-Silicone-Sealant/dp/B00ID8IUJY/ref=sr_1_10?keywords=heat+resistant+silicone+sealant&sr=8-10
 
 ## Arduino Pinout
