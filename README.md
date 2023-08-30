@@ -60,6 +60,7 @@ Refere to: ``` */src/reflow_system.h ```
 * Long press the button at the main screen to access the profile selecton screen. Once there, quick presses will cycle 1 of 5 hardcoded profiles.
 Profiles can be modified in: ``` */src/reflow_common.cpp ```
 * Long press again to return to the main screen.
+* Short press anytime during a cycle will abort it
 
 ## Screen Legend
 Referencing: ```*/extras/images/DSC_0015.JPG```  
