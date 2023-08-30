@@ -78,5 +78,11 @@ Z:--      -  Zone time in seconds
 S:---.--C -  Temperature setpoint for current zone
 </pre>
 
+## Debug/Testing
+* Use a program like Putty to connect to the Arduino over USB at 115200 baud rate.  
+* Type "help" to get a list of available commands.
+* PID Tuning: Replace reflow_main.cpp with pid_tuner.cpp and recompile. Type "help" for available commands.
+* The PID tuner is separate because it wasn't meant for reflow purposes. It was for recording the temperature ramp rates from room temp to the setpoint. Sadly, I lost spreadsheet with some of my test data. However, one can set Putty to record the output window and save it as a csv file, which the debug output is already formatted for it.
+
 ## TODO
 * schematic
