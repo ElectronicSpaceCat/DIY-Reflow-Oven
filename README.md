@@ -72,7 +72,7 @@ From top left to bottom right (first line)
 <pre>
 LF1       -  Lead Free Profile 1 (can modify but should keep it to 3 characters)  
 Preheat   -  One of the states in: */src/reflow_state_machine.h >> state_t  
---.--C    -  Temperature read by the termocouple  
+--.--C    -  Temperature read by the thermocouple  
 </pre>
 
 From top left to bottom right (second line)  
