@@ -13,12 +13,70 @@ I chose to use an Arduino Mega 2560 Rev3 that I had laying around (finally had a
 
 This reflow oven design has a single button for accessing/selecting reflow profiles and returning to the main screen.
 
-A few toaster build guides:
-
-https://www.rocketscream.com/blog/forums/topic/reflow-oven-builds/
-
+A few toaster build guides:  
+https://www.rocketscream.com/blog/forums/topic/reflow-oven-builds/  
 https://www.whizoo.com/reflowoven
 
+## Parts Used
+* 1x Arduino Mega 2560 Rev3 (could likely port to other versions)  
+https://store.arduino.cc/products/arduino-mega-2560-rev3
+
+* 1x TO1785SG Toaster  
+https://www.amazon.com/BLACK-DECKER-TO1785SG-Toaster-4-Slice/dp/B08R7WCRT8/ref=cm_cr_arp_d_product_top?ie=UTF8
+
+* 1x Adafruit MCP9600  
+https://www.amazon.com/Adafruit-4101-MCP9600-Thermocouple-Amplifier/dp/B07SZ8YVTW/ref=sr_1_1?keywords=adafruit+mcp9600&sr=8-1
+
+* 1x Alligator Clip K-Type Thermocouple Thermometer  
+https://www.amazon.com/GenieFun-Alligator-Thermocouple-Thermometer-Temperature/dp/B01N11I90O
+
+* 1x 6AN Weld on Bung Fitting (optional, but was used to run the thermocouple through the wall to the electronics side)  
+https://www.amazon.com/EVIL-ENERGY-Fitting-Adapter-Stainless/dp/B089VP476L/ref=sr_1_6?keywords=weld%2Bbung%2Bsteel&sr=8-6&th=1
+
+* 1x Momentary Push Button Switch High Round Cap Waterproof Stainless Steel  
+https://www.amazon.com/Waterproof-Momentary-Stainless-Button-Terminals/dp/B079HTQ7XD/ref=sr_1_6?keywords=push%2Bbutton%2Bswitch%2Bmetal&sr=8-6&th=1
+
+* 1x OLED 128x64 Pixel  
+https://www.amazon.com/Hosyond-Display-Self-Luminous-Compatible-Raspberry/dp/B09C5K91H7/ref=sr_1_4?keywords=oled%2Bdisplay&s=electronics&sr=1-4&th=1
+
+* 3x SSR-40 AA (Kinda cheap (had a terminal break off), may want something better)  
+1x each for the bottom element, top element, and fan (optional)  
+https://www.amazon.com/SSR-40AA-80-250V-Output-24-380V-SSR-40/dp/B07FVDL7YX/ref=sr_1_11?keywords=solid%2Bstate%2Brelay&sr=8-11&th=1
+
+* Reflect-A-GOLD
+https://www.designengineering.com/reflect-a-gold-heat-reflective-tape-2-x-15/
+
+* Floor & Tunnel Shield II
+https://www.designengineering.com/floor-tunnel-shield-ii-21-x-24/
+
+* Temperature Silicone Sealant
+https://www.amazon.co.uk/Weld-31314-Temperature-Silicone-Sealant/dp/B00ID8IUJY/ref=sr_1_10?keywords=heat+resistant+silicone+sealant&sr=8-10
+
+## Arduino Pinout
+Refere to: ``` */src/reflow_system.h ```
+
+## How to use
+* A short press at the main screen will start the reflow cycle. The temperature will be graphed over time and a vertical marker will indicated when it's in the next zone.
+* Long press the button at the main screen to access the profile selecton screen. Once there, quick presses will cycle 1 of 5 hardcoded profiles.
+Profiles can be modified in: ``` */src/reflow_common.cpp ```
+* Long press again to return to the main screen.
+
+## Screen Legend
+Referencing: ```*/extras/images/DSC_0015.JPG```  
+
+From top left to bottom right (first line)  
+<pre>
+LF1       -  Lead Free Profile 1 (can modify but should keep it to 3 characters)  
+Preheat   -  One of the states in: ```*/src/reflow_state_machine.h >> state_t```  
+--.--C    -  Temperature read by the termocouple  
+</pre>
+
+From top left to bottom right (second line)  
+<pre>
+R:--      -  Reflow time in seconds  
+Z:--      -  Zone time in seconds  
+S:---.--C -  Temperature setpoint for current zone
+</pre>
+
 ## TODO
-* schematics
-* pictures
+* schematic
