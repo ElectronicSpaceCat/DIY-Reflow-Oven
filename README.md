@@ -17,6 +17,10 @@ A few toaster build guides:
 https://www.rocketscream.com/blog/forums/topic/reflow-oven-builds/  
 https://www.whizoo.com/reflowoven
 
+## Tools Needed
+* Dremel or something to cut holes in the toaster
+* 3d printer for the face plates
+
 ## Parts Used
 * 1x Arduino Mega 2560 Rev3 (could likely port to other versions)  
 https://store.arduino.cc/products/arduino-mega-2560-rev3
@@ -89,7 +93,7 @@ S:---.--C -  Temperature setpoint for current zone
 * The PID tuner is separate because it wasn't meant for reflow purposes. It was for recording the temperature ramp rates from room temp to the setpoint. Sadly, I lost spreadsheet with some of my test data. However, one can set Putty to record the output window and save it as a csv file, which the debug output is already formatted for it.
 
 ## Compiling (windows)
-* Download the arm sdk to the project root folder: https://developer.arm.com/downloads/-/gnu-rm  >> ```gcc-arm-none-eabi-10.3-2021.10-win32.zip```
+* Download the arm sdk to the project root folder: https://developer.arm.com/downloads/-/gnu-rm  >> ```gcc-arm-none-eabi-10.3-2021.10-win32.zip``` and extract to root folder of project
 * Download the Arduino IDE https://downloads.arduino.cc/arduino-ide/arduino-ide_2.2.0_Windows_64bit.exe
 * Select the Mega 2560 from Tools > Board
 * Find the source files for it which gets put in AppData or something but will be in a folder path like: ```Arduino15/packages/arduino/hardware/sam/1.6.12```
