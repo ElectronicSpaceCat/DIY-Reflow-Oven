@@ -12,8 +12,8 @@ MODE $(COMM_PORT):1200,N,8,1,P
 ::Now erase (-e), write (-w), verify (-v), set to boot from flash (-b), and reset (-R)
 
 PROJ_DIR   := ./
-BOSSAC_DIR := $(PROJ_DIR)\Arduino15\packages\arduino\tools\bossac\1.6.1-arduino
-BIN_FILE   := $(PROJ_DIR)\diy_reflow_app.bin
+BOSSAC_DIR := $(PROJ_DIR)\arduino-flash-tools\tools_windows\bossac\bin
+BIN_FILE   := $(PROJ_DIR)\build\diy_reflow_app.bin
 
 $(BOSSAC_DIR)\bossac.exe --port=$(COMM_PORT) -U false -e -w -b $(BIN_FILE) -R
 

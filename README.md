@@ -94,29 +94,25 @@ S:---.--C -  Temperature setpoint for current zone
 
 ## Compiling (windows)
 * Download the arm sdk to the project root folder: https://developer.arm.com/downloads/-/gnu-rm  >> ```gcc-arm-none-eabi-10.3-2021.10-win32.zip``` and extract to root folder of project
-* Download the Arduino IDE https://downloads.arduino.cc/arduino-ide/arduino-ide_2.2.0_Windows_64bit.exe
-* Select the Mega 2560 from Tools > Board
-* Find the source files for it which gets put in AppData or something but will be in a folder path like: ```Arduino15/packages/arduino/hardware/sam/1.6.12```
-* I cannot remember if you need to compile a sample Blinky project or just simply select the board type for the board source files to install..
-* Copy then entire ```/Arduino15``` folder in the root folder of this project after cloning
-* Run the ```*/Makefile```
+* Clone to project root folder: https://github.com/arduino/ArduinoCore-sam.git
+* Clone to project root folder: https://github.com/arduino/arduino-flash-tools.git
+* run ```make``` on the ``*/Makefile```
+
+## Flashing (windows)
 * To flash the board, run the ```usb_flash.bat``` and make sure to replace 'COM4' with whatever yours is at the line ```COMM_PORT := COM4```
 * If the binary drag and drop isn't broken like mine was then you may try that option instead  
 
-  #### If the above links don't work:
-  * The mega core https://github.com/arduino/ArduinoCore-sam/tree/master
-  * The flash tools https://github.com/arduino/arduino-flash-tools/tree/master
-  * The flash tool used for this project is https://github.com/arduino/arduino-flash-tools/tree/master/tools_windows/bossac/bin
-  * The following paths will need to modified in ```*/Makefile```:
+  #### Update the following paths if needed:
+  * ```*/Makefile```:
     ```
-    SDK_ROOT := $(PROJ_DIR)/Arduino15/packages/arduino/hardware/sam/1.6.12
-    SDK_TOOLS_ROOT := $(PROJ_DIR)/Arduino15/packages/arduino/tools
+    SDK_ROOT := $(PROJ_DIR)/ArduinoCore-sam
+    SDK_TOOLS_ROOT := $(PROJ_DIR)/ArduinoCore-sam/packages/arduino/tools
     LINKER_DIR := $(SDK_ROOT)/variants/arduino_due_x/linker_scripts/gcc
-    GNU_INSTALL_ROOT := $(PROJ_DIR)/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/
+    GNU_INSTALL_ROOT := $(PROJ_DIR)/gcc-arm-none-eabi-10.3-2021.10/bin/
     ```
-  * Also in ```*/usb_flah.bat```:
+  * ```*/usb_flash.bat```:
     ```
-    $(PROJ_DIR)\Arduino15\packages\arduino\tools\bossac\1.6.1-arduino
+    $(PROJ_DIR)\arduino-flash-tools\tools_windows\bossac\bin
     ```
 
 ## TODO

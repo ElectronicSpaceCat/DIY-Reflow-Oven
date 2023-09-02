@@ -1,13 +1,13 @@
 PROJECT_NAME     := diy_reflow
 TARGETS          := diy_reflow_app
-OUTPUT_DIRECTORY := _build_makefile
+OUTPUT_DIRECTORY := build
 
 PROJ_DIR := ./
-SDK_ROOT := $(PROJ_DIR)/Arduino15/packages/arduino/hardware/sam/1.6.12
-SDK_TOOLS_ROOT := $(PROJ_DIR)/Arduino15/packages/arduino/tools
+SDK_ROOT := $(PROJ_DIR)/ArduinoCore-sam
+SDK_TOOLS_ROOT := $(PROJ_DIR)/ArduinoCore-sam/packages/arduino/tools
 LINKER_DIR := $(SDK_ROOT)/variants/arduino_due_x/linker_scripts/gcc
 
-GNU_INSTALL_ROOT := $(PROJ_DIR)/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/
+GNU_INSTALL_ROOT := $(PROJ_DIR)/gcc-arm-none-eabi-10.3-2021.10/bin/
 GNU_VERSION := 10.3.1
 GNU_PREFIX := arm-none-eabi
 
@@ -32,8 +32,6 @@ SRC_FILES += \
 	$(PROJ_DIR)/libs/Adafruit_BusIO/Adafruit_SPIDevice.cpp \
 	$(PROJ_DIR)/libs/Adafruit_GFX_Library/glcdfont.c \
 	$(PROJ_DIR)/libs/Adafruit_GFX_Library/Adafruit_GFX.cpp \
-	$(PROJ_DIR)/libs/Adafruit_GFX_Library/Adafruit_GrayOLED.cpp \
-	$(PROJ_DIR)/libs/Adafruit_GFX_Library/Adafruit_SPITFT.cpp \
 	$(PROJ_DIR)/libs/Adafruit_MCP9600_Library/Adafruit_MCP9600.cpp \
 	$(PROJ_DIR)/libs/Adafruit_SSD1306/Adafruit_SSD1306.cpp \
 	$(PROJ_DIR)/libs/Bounce2/src/Bounce2.cpp \
@@ -106,8 +104,6 @@ INC_FOLDERS += \
 	src \
 	$(PROJ_DIR)/libs/Adafruit_BusIO \
 	$(PROJ_DIR)/libs/Adafruit_GFX_Library \
-	$(PROJ_DIR)/libs/Adafruit_GFX_Library/Fonts \
-	$(PROJ_DIR)/libs/Adafruit_GFX_Library/fontconvert \
 	$(PROJ_DIR)/libs/Adafruit_MCP9600_Library \
 	$(PROJ_DIR)/libs/Adafruit_SSD1306 \
 	$(PROJ_DIR)/libs/Bounce2 \
@@ -132,7 +128,7 @@ INC_FOLDERS += \
 	$(SDK_ROOT)/system/CMSIS/Device/ATMEL/sam3xa/include/instance \
 	$(SDK_ROOT)/system/CMSIS/Device/ATMEL/sam3xa/source \
 	$(SDK_ROOT)/system/CMSIS/Device/ATMEL/sam3xa/source/gcc_arm \
-	$(SDK_TOOLS_ROOT)/arm-none-eabi-gcc/4.8.3-2014q1/share/gcc-arm-none-eabi/samples/startup \
+	#$(SDK_TOOLS_ROOT)/arm-none-eabi-gcc/4.8.3-2014q1/share/gcc-arm-none-eabi/samples/startup \
 
 # Libraries common to all targets
 LIB_FILES += \
