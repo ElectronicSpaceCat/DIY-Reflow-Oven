@@ -98,10 +98,6 @@ S:---.--C -  Temperature setpoint for current zone
 * Clone to project root folder: https://github.com/arduino/arduino-flash-tools.git
 * run ```make``` on the ```*/Makefile```
 
-## Flashing (windows)
-* To flash the board, run the ```usb_flash.bat``` and make sure to replace 'COM4' with whatever yours is at the line ```COMM_PORT := COM4```
-* If the binary drag and drop isn't broken like mine was then you may try that option instead  
-
   #### Update the following paths if needed:
   * ```*/Makefile```:
     ```
@@ -114,6 +110,10 @@ S:---.--C -  Temperature setpoint for current zone
     ```
     $(PROJ_DIR)\arduino-flash-tools\tools_windows\bossac\bin
     ```
+
+## Flashing (windows)
+* To flash the board, run the ```usb_flash.bat``` and make sure to replace 'COM4' with whatever yours is at the line ```COMM_PORT := COM4```
+* If the binary drag and drop isn't broken like mine was then you may try that option instead  
 
 ## TODO
 * schematic
