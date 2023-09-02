@@ -63,12 +63,12 @@ https://www.designengineering.com/floor-tunnel-shield-ii-21-x-24/
 https://www.amazon.co.uk/Weld-31314-Temperature-Silicone-Sealant/dp/B00ID8IUJY/ref=sr_1_10?keywords=heat+resistant+silicone+sealant&sr=8-10
 
 ## Arduino Pinout
-Refere to: ``` */src/reflow_system.h ```
+Refere to: ``` ./src/reflow_system.h ```
 
 ## How to use
 * A short press at the main screen will start the reflow cycle. The temperature will be graphed over time and a vertical marker will indicated when it's in the next zone.
 * Long press the button at the main screen to access the profile selecton screen. Once there, quick presses will cycle 1 of 5 hardcoded profiles.
-Profiles can be modified in: ``` */src/reflow_common.cpp ```
+Profiles can be modified in: ``` ./src/reflow_common.cpp ```
 * Long press again to return to the main screen.
 * Short press anytime during a cycle will abort it
 
@@ -98,21 +98,22 @@ S:---.--C -  Temperature setpoint for current zone
 * Run ```make```
 
   #### Update the following paths if needed:
-  * ```*/Makefile```:
+  * ```./Makefile```:
     ```
     SDK_ROOT := $(PROJ_DIR)/ArduinoCore-sam
     SDK_TOOLS_ROOT := $(PROJ_DIR)/ArduinoCore-sam/packages/arduino/tools
     LINKER_DIR := $(SDK_ROOT)/variants/arduino_due_x/linker_scripts/gcc
     GNU_INSTALL_ROOT := $(PROJ_DIR)/gcc-arm-none-eabi-10.3-2021.10/bin/
     ```
-  * ```*/usb_flash.bat```:
+  * ```./usb_flash.bat```:
     ```
     $(PROJ_DIR)\arduino-flash-tools\tools_windows\bossac\bin
     ```
 
 ## Flashing (windows)
 * To flash the board, run the ```usb_flash.bat``` and make sure to replace 'COM4' with whatever yours is at the line ```COMM_PORT := COM4```
-* If the binary drag and drop isn't broken like mine was then you may try that option instead  
+* If the binary drag and drop isn't broken like mine was then you may try that option instead
+* <b>Note</b>: Precompiled binaries are also available at ```./build```
 
 ## Debug/Testing
 * Use a program like Putty to connect to the Arduino over USB at 115200 baud rate.  
