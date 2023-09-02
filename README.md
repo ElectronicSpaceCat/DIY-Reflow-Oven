@@ -96,7 +96,7 @@ S:---.--C -  Temperature setpoint for current zone
 * Download the arm sdk to the project root folder: https://developer.arm.com/downloads/-/gnu-rm  >> ```gcc-arm-none-eabi-10.3-2021.10-win32.zip``` and extract to root folder of project
 * Clone to project root folder: https://github.com/arduino/ArduinoCore-sam.git
 * Clone to project root folder: https://github.com/arduino/arduino-flash-tools.git
-* run ```make``` on the ``*/Makefile```
+* run ```make``` on the ```*/Makefile```
 
 ## Flashing (windows)
 * To flash the board, run the ```usb_flash.bat``` and make sure to replace 'COM4' with whatever yours is at the line ```COMM_PORT := COM4```
