@@ -37,6 +37,9 @@ https://www.amazon.com/GenieFun-Alligator-Thermocouple-Thermometer-Temperature/d
 * 1x 6AN Weld on Bung Fitting (optional, but was used to run the thermocouple through the wall to the electronics side)  
 https://www.amazon.com/EVIL-ENERGY-Fitting-Adapter-Stainless/dp/B089VP476L/ref=sr_1_6?keywords=weld%2Bbung%2Bsteel&sr=8-6&th=1
 
+* 1x 7/16-20 Hex Jam Nut (for the weld bung)
+https://www.amazon.com/16-20-Fine-Thread-Stainless-Steel/dp/B07QHFX87J/ref=sr_1_7?keywords=7%2F16-20+jam+nut&sr=8-7
+
 * 1x Momentary Push Button Switch High Round Cap Waterproof Stainless Steel  
 https://www.amazon.com/Waterproof-Momentary-Stainless-Button-Terminals/dp/B079HTQ7XD/ref=sr_1_6?keywords=push%2Bbutton%2Bswitch%2Bmetal&sr=8-6&th=1
 
@@ -86,17 +89,12 @@ Z:--      -  Zone time in seconds
 S:---.--C -  Temperature setpoint for current zone
 </pre>
 
-## Debug/Testing
-* Use a program like Putty to connect to the Arduino over USB at 115200 baud rate.  
-* Type "help" to get a list of available commands.
-* PID Tuning: Replace reflow_main.cpp with pid_tuner.cpp and recompile. Type "help" for available commands.
-* The PID tuner is separate because it wasn't meant for reflow purposes. It was for recording the temperature ramp rates from room temp to the setpoint. Sadly, I lost spreadsheet with some of my test data. However, one can set Putty to record the output window and save it as a csv file, which the debug output is already formatted for it.
-
 ## Compiling (windows)
 * Download the arm sdk to the project root folder: https://developer.arm.com/downloads/-/gnu-rm  >> ```gcc-arm-none-eabi-10.3-2021.10-win32.zip``` and extract to root folder of project
 * Clone to project root folder: https://github.com/arduino/ArduinoCore-sam.git
 * Clone to project root folder: https://github.com/arduino/arduino-flash-tools.git
-* run ```make``` on the ```*/Makefile```
+* Open command terminal: ```cd (path location here)/diy-reflow-oven```
+* Run ```make```
 
   #### Update the following paths if needed:
   * ```*/Makefile```:
@@ -115,5 +113,11 @@ S:---.--C -  Temperature setpoint for current zone
 * To flash the board, run the ```usb_flash.bat``` and make sure to replace 'COM4' with whatever yours is at the line ```COMM_PORT := COM4```
 * If the binary drag and drop isn't broken like mine was then you may try that option instead  
 
+## Debug/Testing
+* Use a program like Putty to connect to the Arduino over USB at 115200 baud rate.  
+* Type "help" to get a list of available commands.
+* PID Tuning: Replace reflow_main.cpp with pid_tuner.cpp and recompile. Type "help" for available commands.
+* The PID tuner is separate because it wasn't meant for reflow purposes. It was for recording the temperature ramp rates from room temp to the setpoint. Sadly, I lost spreadsheet with some of my test data. However, one can set Putty to record the output window and save it as a csv file, which the debug output is already formatted for it.
+* 
 ## TODO
 * schematic
