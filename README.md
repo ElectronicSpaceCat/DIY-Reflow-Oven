@@ -70,7 +70,7 @@ Profiles can be modified in: ``` */src/reflow_common.cpp ```
 * Short press anytime during a cycle will abort it
 
 ## Screen Legend
-Referencing: ```*/extras/images/DSC_0015.JPG```  
+<img src="https://github.com/ElectronicSpaceCat/diy-reflow-oven/blob/master/extras/images/rf_complete.jpg" width="250">`  
 
 From top left to bottom right (first line)  
 <pre>
