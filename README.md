@@ -90,6 +90,7 @@ S:---.--C -  Temperature setpoint for current zone
 </pre>
 
 ## Compiling (windows)
+* MinGW required for Windows to build, install instructions here: https://www.geeksforgeeks.org/installing-mingw-tools-for-c-c-and-changing-environment-variable/)
 * Download the arm sdk to the project root folder: https://developer.arm.com/downloads/-/gnu-rm  >> ```gcc-arm-none-eabi-10.3-2021.10-win32.zip``` and extract to root folder of project
 * Clone to project root folder: https://github.com/arduino/ArduinoCore-sam.git
 * Clone to project root folder: https://github.com/arduino/arduino-flash-tools.git
