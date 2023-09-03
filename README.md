@@ -95,7 +95,10 @@ S:---.--C -  Temperature setpoint for current zone
 ## Compiling
 #### Windows/Linux
 * MinGW required for Windows to build, install instructions here: https://www.geeksforgeeks.org/installing-mingw-tools-for-c-c-and-changing-environment-variable/)
-* Download the arm sdk to the project root folder: https://developer.arm.com/downloads/-/gnu-rm  >> ```gcc-arm-none-eabi-10.3-2021.10-win32.zip``` and extract to root folder of project
+* Download the arm sdk to the project root folder from: https://developer.arm.com/downloads/-/gnu-rm
+  * Windows: ```gcc-arm-none-eabi-10.3-2021.10-win32.zip```
+  * Linux 32bit: ```gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2```
+  * Linux 64bit: ```gcc-arm-none-eabi-10.3-2021.10-aarch64-linux.tar.bz2```
 * Clone to project root folder: https://github.com/arduino/ArduinoCore-sam.git
 * Clone to project root folder: https://github.com/arduino/arduino-flash-tools.git
 * Open command terminal: ```cd (path location here)/diy-reflow-oven```
@@ -125,7 +128,6 @@ S:---.--C -  Temperature setpoint for current zone
     ```
     $(PROJ_DIR)\arduino-flash-tools\tools_linux_64\bossac\bin
     ```
-
   #### Notes
   * Precompiled binaries are also available at ```./build```
   * If the Adruino binary drag and drop flash method isn't broken like mine was then you may try that option instead.
