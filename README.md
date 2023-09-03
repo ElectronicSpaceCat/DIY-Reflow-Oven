@@ -53,6 +53,9 @@ https://www.amazon.com/SSR-40AA-80-250V-Output-24-380V-SSR-40/dp/B07FVDL7YX/ref=
 * 9VDC 1A Arduino Compatible Power Supply Adapter 110V AC (barrel jack needs to be cut off)
 https://www.amazon.com/dp/B018OLREG4?th=1&psc=1&language=en_US
 
+* Quick Connects (These things are amazing)  
+https://www.amazon.com/Connectors-Conductor-Combination-Assortment-Connection/dp/B09CKDWK4Q/ref=sr_1_96_sspa?keywords=lever%2Bwire%2Bconnectors&s=industrial&sr=1-96-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&th=1
+
 * Reflect-A-GOLD   
 https://www.designengineering.com/reflect-a-gold-heat-reflective-tape-2-x-15/
 
@@ -114,7 +117,6 @@ S:---.--C -  Temperature setpoint for current zone
     ```
     $(PROJ_DIR)\arduino-flash-tools\tools_windows\bossac\bin
     ```
-
   #### Linux
   * Make sure the script is executable with ```sudo chmod +x usb_flash.sh```
   * Run ```usb_flash.sh``` and make sure to replace ```ttyACM1``` with the correct port at the line ```COMM_PORT=ttyACM1```
@@ -124,9 +126,9 @@ S:---.--C -  Temperature setpoint for current zone
     $(PROJ_DIR)\arduino-flash-tools\tools_linux_64\bossac\bin
     ```
 
-* <b>Notes</b>:
+  #### Notes
   * Precompiled binaries are also available at ```./build```
-  * If the binary drag and drop isn't broken like mine was then you may try that option instead.
+  * If the Adruino binary drag and drop flash method isn't broken like mine was then you may try that option instead.
 
 ## Debug/Testing
 * Use a program like Putty to connect to the Arduino over USB at 115200 baud rate.  
