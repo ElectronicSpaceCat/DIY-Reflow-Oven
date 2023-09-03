@@ -30,6 +30,7 @@
  * Connection parameters:
  * comm:        whatever port is in use
  * baud rate:   115200
+ * putty:       force echo on to see what is being typed
  */
 
 #include "reflow_debug.h"
@@ -58,6 +59,8 @@ namespace REFLOW::DEBUG {
   void init(void) {
     timerDebug = millis();
     Serial.begin(115200);
+    Serial.println("DIY-Reflow-Oven");
+    printHelp();
   }
 
   void poll(void) {

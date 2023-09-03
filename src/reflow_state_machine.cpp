@@ -256,6 +256,11 @@ namespace {
 
         break;
 
+      case STATE_PROFILE:
+        // Stay here until user resets
+
+        break;
+
       case STATE_DEBUG:
         if(DEBUG::getDebugMode() == false) {
           _state = STATE_RESET;
@@ -264,24 +269,11 @@ namespace {
         break;
 
       case STATE_ABORT:
-        _state = STATE_RESET;
-
-        break;
-
       case STATE_ERROR:
-        _state = STATE_RESET;
-
-        break;
-
-      case STATE_PROFILE:
-        // Stay here until user resets
-
-        break;
-
       default:
         _state = STATE_RESET;
-        break;
 
+        break;
     }
   }
 

@@ -89,7 +89,8 @@ Z:--      -  Zone time in seconds
 S:---.--C -  Temperature setpoint for current zone
 </pre>
 
-## Compiling (windows)
+## Compiling
+#### Windows/Linux
 * MinGW required for Windows to build, install instructions here: https://www.geeksforgeeks.org/installing-mingw-tools-for-c-c-and-changing-environment-variable/)
 * Download the arm sdk to the project root folder: https://developer.arm.com/downloads/-/gnu-rm  >> ```gcc-arm-none-eabi-10.3-2021.10-win32.zip``` and extract to root folder of project
 * Clone to project root folder: https://github.com/arduino/ArduinoCore-sam.git
@@ -105,21 +106,34 @@ S:---.--C -  Temperature setpoint for current zone
     LINKER_DIR := $(SDK_ROOT)/variants/arduino_due_x/linker_scripts/gcc
     GNU_INSTALL_ROOT := $(PROJ_DIR)/gcc-arm-none-eabi-10.3-2021.10/bin/
     ```
-  * ```./usb_flash.bat```:
+
+## Flashing Firmware
+  #### Windows
+  * Run ```usb_flash.bat``` and make sure to replace ```COM4``` with the correct port at the line  ```COMM_PORT := COM4```d.
+  * The executable location ```./usb_flash.bat``` can be modified at the line:
     ```
     $(PROJ_DIR)\arduino-flash-tools\tools_windows\bossac\bin
     ```
 
-## Flashing (windows)
-* To flash the board, run the ```usb_flash.bat``` and make sure to replace 'COM4' with whatever yours is at the line ```COMM_PORT := COM4```
-* If the binary drag and drop isn't broken like mine was then you may try that option instead
-* <b>Note</b>: Precompiled binaries are also available at ```./build```
+  #### Linux
+  * Make sure the script is executable with ```sudo chmod +x usb_flash.sh```
+  * Run ```usb_flash.sh``` and make sure to replace ```ttyACM1``` with the correct port at the line ```COMM_PORT=ttyACM1```
+  * Typically the port should be on ```ttyACM0``` or ```ttyACM1```
+  * The executable location ```./usb_flash.sh``` can be modified at the line:
+    ```
+    $(PROJ_DIR)\arduino-flash-tools\tools_linux_64\bossac\bin
+    ```
+
+* <b>Notes</b>:
+  * Precompiled binaries are also available at ```./build```
+  * If the binary drag and drop isn't broken like mine was then you may try that option instead.
 
 ## Debug/Testing
 * Use a program like Putty to connect to the Arduino over USB at 115200 baud rate.  
 * Type "help" to get a list of available commands.
 * PID Tuning: Replace reflow_main.cpp with pid_tuner.cpp and recompile. Type "help" for available commands.
 * The PID tuner is separate because it wasn't meant for reflow purposes. It was for recording the temperature ramp rates from room temp to the setpoint. Sadly, I lost spreadsheet with some of my test data. However, one can set Putty to record the output window and save it as a csv file, which the debug output is already formatted for it.
-* 
+
 ## TODO
 * schematic
+* more images
