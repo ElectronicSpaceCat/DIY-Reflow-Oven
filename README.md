@@ -116,7 +116,7 @@ S:---.--C -  Temperature setpoint for current zone
 ## Flashing Firmware
   #### Windows
   * Run ```./usb_flash.bat``` and make sure to replace ```COM4``` with the correct port at the line  ```COMM_PORT := COM4```
-  * The executable location ```./usb_flash.bat``` can be modified at the line:
+  * The executable location in ```./usb_flash.bat``` can be modified at the line:
     ```
     $(PROJ_DIR)\arduino-flash-tools\tools_windows\bossac\bin
     ```
@@ -124,7 +124,7 @@ S:---.--C -  Temperature setpoint for current zone
   * Make sure the script is executable with ```sudo chmod +x usb_flash.sh```
   * Run ```./usb_flash.sh``` and make sure to replace ```ttyACM1``` with the correct port at the line ```COMM_PORT=ttyACM1```
   * Typically the port should be on ```ttyACM0``` or ```ttyACM1```
-  * The executable location ```./usb_flash.sh``` can be modified at the line:
+  * The executable location in ```./usb_flash.sh``` can be modified at the line:
     ```
     $(PROJ_DIR)\arduino-flash-tools\tools_linux_64\bossac\bin
     ```
