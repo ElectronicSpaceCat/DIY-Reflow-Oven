@@ -78,14 +78,14 @@ Profiles can be modified in: ``` ./src/reflow_common.cpp ```
 ## Screen Legend
 <img src="https://github.com/ElectronicSpaceCat/diy-reflow-oven/blob/master/extras/images/rf_complete.jpg" width="250">`  
 
-From top left to bottom right (first line)  
+From top left to top right (first line)  
 <pre>
 LF1       -  Lead Free Profile 1 (can modify but should keep it to 3 characters)  
 Preheat   -  One of the states in: */src/reflow_state_machine.h >> state_t  
 --.--C    -  Temperature read by the thermocouple  
 </pre>
 
-From top left to bottom right (second line)  
+From bottom left to bottom right (second line)  
 <pre>
 R:--      -  Reflow time in seconds  
 Z:--      -  Zone time in seconds  
