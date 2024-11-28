@@ -23,8 +23,8 @@
 
  *******************************************************************************/
 
-#ifndef _COMMON_H
-#define _COMMON_H
+#ifndef _REFLOW_PROFILES_H
+#define _REFLOW_PROFILES_H
 
 #include "Arduino.h"
 
@@ -70,4 +70,4 @@ namespace REFLOW {
   const profileData_t* getCurrentProfile(void);
 }
 
-#endif // _COMMON_H
+#endif // _REFLOW_PROFILES_H

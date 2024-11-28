@@ -24,7 +24,7 @@
  *******************************************************************************/
 
 #include "reflow_pid.h"
-#include "reflow_common.h"
+#include "reflow_profiles.h"
 #include "PID_v1.h"
 #include "reflow_state_machine.h"
 #include "reflow_thermocouple.h"

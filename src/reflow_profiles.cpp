@@ -39,7 +39,7 @@
  *       required; therefore, the time parameter was ignored to finish the project sooner.
  */
 
-#include "reflow_common.h"
+#include "reflow_profiles.h"
 
 namespace {
   byte _profileID = 0;
@@ -52,10 +52,10 @@ namespace REFLOW {
    * Example: LF1 (LF - Lead Free)
    *
    *            SET     SET
-   * ZONE    |  TEMP(F) TIME(s) KP	 KI    KD
+   * ZONE    |  TEMP(F) TIME(s) KP   KI    KD
    * ==================================================
    * PREHEAT |  150     90      100  0.10  1500
-   * SOAK    |  180     90      75   0.05  2200
+   * SOAK    |  180     90      65   0.05  2200
    * REFLOW  |  210     60      100  0.10  1000
    * COOL    |  100     0       100  0.10  1000
    *

@@ -26,7 +26,7 @@
 #ifndef _REFLOW_STATE_MACHINE_H
 #define _REFLOW_STATE_MACHINE_H
 
-#include "reflow_common.h"
+#include "reflow_profiles.h"
 
 namespace REFLOW::SM {
 
@@ -46,7 +46,6 @@ namespace REFLOW::SM {
     STATE_HOT,
     STATE_ERROR
   } state_t;
-
 
   // Strings for each state
   extern const char *reflowStateStrings[];

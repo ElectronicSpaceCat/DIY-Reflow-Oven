@@ -26,7 +26,7 @@
 #ifndef _OLED_GFX_H
 #define _OLED_GFX_H
 
-#include "reflow_common.h"
+#include "reflow_profiles.h"
 #include "reflow_state_machine.h"
 
 namespace REFLOW::OLED::GFX {

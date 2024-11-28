@@ -24,7 +24,7 @@
  *******************************************************************************/
 
 #include "reflow_led.h"
-#include "reflow_common.h"
+#include "reflow_profiles.h"
 #include "reflow_system.h"
 
 #define INTERVAL_TIME 500

@@ -7,7 +7,7 @@ SDK_ROOT := $(PROJ_DIR)/ArduinoCore-sam
 SDK_TOOLS_ROOT := $(PROJ_DIR)/ArduinoCore-sam/packages/arduino/tools
 LINKER_DIR := $(SDK_ROOT)/variants/arduino_due_x/linker_scripts/gcc
 
-GNU_INSTALL_ROOT := $(PROJ_DIR)/gcc-arm-none-eabi-10.3-2021.10/bin/
+GNU_INSTALL_ROOT := ./.$(PROJ_DIR)/gcc-arm-none-eabi-10.3-2021.10/bin/
 GNU_VERSION := 10.3.1
 GNU_PREFIX := arm-none-eabi
 
@@ -18,7 +18,7 @@ $(OUTPUT_DIRECTORY)/$(TARGETS).out: \
 SRC_FILES += \
 	$(PROJ_DIR)/src/reflow_main.cpp \
 	$(PROJ_DIR)/src/reflow_buttons.cpp \
-	$(PROJ_DIR)/src/reflow_common.cpp \
+	$(PROJ_DIR)/src/reflow_profiles.cpp \
 	$(PROJ_DIR)/src/reflow_debug.cpp \
 	$(PROJ_DIR)/src/reflow_led.cpp \
 	$(PROJ_DIR)/src/reflow_oled.cpp \

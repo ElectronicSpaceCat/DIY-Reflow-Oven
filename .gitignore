@@ -1,0 +1,9 @@
+build/diy_reflow_app/
+build/*.in
+build/*.out
+build/*.map
+.project
+.cproject
+.settings
+arduino-flash-tools
+ArduinoCore*

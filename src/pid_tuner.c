@@ -31,7 +31,7 @@
 
 
 #include "reflow_debug.h"
-#include "reflow_common.h"
+#include "reflow_profiles.h"
 #include "reflow_state_machine.h"
 #include "reflow_thermocouple.h"
 #include "reflow_system.h"

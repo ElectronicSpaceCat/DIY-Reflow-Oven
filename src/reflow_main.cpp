@@ -56,7 +56,7 @@
    
  */
 
-#include "reflow_common.h"
+#include "reflow_profiles.h"
 #include "reflow_oled.h"
 #include "reflow_debug.h"
 #include "reflow_pid.h"

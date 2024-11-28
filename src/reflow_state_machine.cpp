@@ -25,13 +25,13 @@
 
 // ***** INCLUDES *****
 #include "reflow_state_machine.h"
-#include "reflow_common.h"
 #include "reflow_thermocouple.h"
 #include "reflow_buttons.h"
 #include "reflow_system.h"
 #include "reflow_pid.h"
 #include "reflow_oled.h"
 #include "reflow_debug.h"
+#include "reflow_profiles.h"
 
 namespace {
 // ***** DEFINES *****

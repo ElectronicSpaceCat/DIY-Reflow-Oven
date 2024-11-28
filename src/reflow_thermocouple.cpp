@@ -24,7 +24,7 @@
  *******************************************************************************/
 
 #include "reflow_thermocouple.h"
-#include "reflow_common.h"
+#include "reflow_profiles.h"
 #include "Adafruit_MCP9600.h"
 
 namespace {

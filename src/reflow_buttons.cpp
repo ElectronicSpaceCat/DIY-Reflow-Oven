@@ -24,7 +24,7 @@
  *******************************************************************************/
 
 #include "reflow_buttons.h"
-#include "reflow_common.h"
+#include "reflow_profiles.h"
 #include "reflow_system.h"
 #include "Bounce2.h"
 
